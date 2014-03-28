@@ -1,0 +1,24 @@
+
+
+*** ChangeLog ****** 
+
+= Version 1.5=(not achieved yet)
+User interface will be added soon for managable templates from admin template and enable and disable sms triggers as per requirement
+
+= Version 1.4 =
+Cod  order handling logic changed
+cod order status changes from ON_HOLD to PROCESSING on confirmation
+
+= Version 1.3 =(tested upto this version)
+Cod-Order-confirmation reminder email functionality added
+
+= Version 1.2 =
+Sms alert for shipment added
+
+= Version 1.1 =
+Sms alert for seller also added
+
+= Version 1.0  =
+First release of Eshop sms guru
+
+
