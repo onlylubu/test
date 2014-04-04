@@ -1,0 +1,157 @@
+*** Product CSV Import Suite Changelog ***
+
+2013.01.11 - version 1.1.9
+ * Fix for when attribute_data is parsed before attribute
+
+2013.01.11 - version 1.1.8
+ * WC 2.0 variations export compat
+
+2013.01.07 - version 1.1.7
+ * Fixed some notices
+
+2012.12.30 - version 1.1.6
+ * Fixed CUSTOM attribute export
+
+2012.12.16 - version 1.1.5
+ * Fix parent sku export
+
+2012.12.16 - version 1.1.4
+ * Don't set publish status automatically on merge.
+ * Only update if postdata size > 1
+ * Cleaned up error messages for variation import failure.
+ * Export parent_sku
+
+2012.12.13 - version 1.1.3
+ * Fix attribute export
+ * 3.5 fixes
+
+2012.12.05 - version 1.1.2
+ * Support exporting yoast SEO fields
+
+2012.12.04 - version 1.1.1
+ * New updater
+
+2012.11.21 - version 1.1.0
+* Fix URLs to images with spaces
+* Consistant columns during export (based on Jason Judge's patch)
+* Support relative stock updates during merge, e.g. (+)10, (-)2
+* Ensure post_status is lowercase and valid.
+
+2012.11.07 - version 1.0.31
+* When importing variations, allow blank columns (to support 'all' attributes)
+
+2012.10.11 - version 1.0.30
+* Allow https image import
+
+2012.10.11 - version 1.0.29
+* product_exists() check should check SKU and title independently
+
+2012.10.11 - version 1.0.28
+* Add timestamp to logs
+
+2012.10.05 - version 1.0.27
+* Parent notices fix
+
+2012.10.03 - version 1.0.26
+* Fix for multiple category import
+
+2012.09.29 - version 1.0.25
+* Don't set defaults on merge
+
+2012.09.17 - version 1.0.24
+* Search sku in pending and future posts
+* Optimisations
+* Support 1.7 file_paths
+
+2012.09.12 - version 1.0.23
+* Fixed attribute/type import
+
+2012.09.11 - version 1.0.22
+* Maintain case for text based attributes
+* Change taxonomy term logic to insert terms more accurately
+
+2012.08.28 - version 1.0.21
+* Fixed merge bug
+
+2012.08.28 - version 1.0.20
+* When importing Images (merge) skip existing images based on basename and URL
+* ini_set( 'auto_detect_line_endings', true ); to support other line endings such as windows
+
+2012.07.25 - version 1.0.19
+* When checking SKU, look at drafts and private products too
+* Export and import default_attributes for variable products
+
+2012.07.25 - version 1.0.18
+* Fix variation import err return
+* Wipe out min_variation_price so they are regenerated after import
+
+2012.06.28 - version 1.0.17
+* New variation column parent_sku - as an alternative to defining post IDs
+
+2012.06.28 - version 1.0.16
+ * backfill_attachment_urls tweak
+ * removed potentially slow post_exists function
+ * Use product title for image titles
+ * Support importing a CSV that is on the server
+
+2012.06.20 - version 1.0.15
+ * Added more filename detection for image URLS
+
+2012.06.07 - version 1.0.14
+ * Fixed parser
+ * gpf product_type
+
+2012.05.26 - version 1.0.12
+ * Improved memory handling during parse
+
+2012.05.26 - version 1.0.11
+ * Improved memory handling during import
+ * Option to choose delimiter
+
+2012.05.26 - version 1.0.10
+ * Mapping fix for product type
+ * Mapping fix for GPF data
+ * Fix for merging variable
+
+2012.05.25 - version 1.0.9
+ * Strtotime for sale price dates
+ * Added sale price dates to export
+ * Export Google Product Feed Data
+
+2012.05.24 - version 1.0.8
+ * Support comment_status column
+ * Support post_name (slug) column
+ * Merging will import if a sku/post ID is not defined or not found.
+ * If a product attribute does not exist, add it!
+
+2012.05.21 - version 1.0.7
+ * Reverted _regular_price change and fixed _price parsing
+
+2012.05.20 - version 1.0.6
+ * Wrap all columns with quotes
+ * price should be regular_price for variations
+ * Local upload tweaks
+
+2012.05.20 - version 1.0.5
+ * Missing format_data_from_csv function in class
+
+2012.05.19 - version 1.0.4
+ * Fix variation import after mapping
+ * Format dates to mysql format
+ * Only encode utf-8 if csv is not utf
+
+2012.05.18 - version 1.0.3
+ * Fix for empty property error
+
+2012.05.16 - version 1.0.2
+ * Moved ID column to prevent excel #failing (SYLK)
+ * Removed post_title requirement for variations
+ * wp_upload_dir fix
+ * exists check takes sku into consideration
+
+2012.05.14 - version 1.0.1
+ * Detect and set locale
+ * Product type check fix
+
+2012.05.10 - version 1.0
+ * First release
